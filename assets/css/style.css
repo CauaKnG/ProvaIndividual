@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.808);
+  padding: 10px 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: rgb(233, 167, 122);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.navigation {
+  display: flex;
+  gap: 0 30px;
+}
+.navigation li{
+  list-style: none;
+}
+.navigation li a {
+  color: rgb(233, 167, 122);
+  text-decoration: none;
+}
+.conteudo {
+  margin: 5px 45px;
+}
+.icones {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 5px;
+}
+.icones img {
+  width: 25px;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.titulo-secao {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.808);
+  color: rgb(233, 167, 122);
+  padding: 15px 0 10px;
+}
+.alinhamento {
+  display: flex;
+  justify-content: center;
+}
+.container-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0 100px;
+}
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.808);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  margin: 10px 0;
+  box-shadow: 0 0 2em black;
+  transition: transform 0.25s linear;
+}
+.card:hover{
+  transform:scale(1.1);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card p {
+  border-top: 1px solid rgba(0, 0, 0, 0.808);
+  padding: 10px;
+}
+.card .botao {
+  display: flex;
+  justify-content: center;
+}
+.card a {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: rgb(233, 167, 122);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 6px 12px;
+  margin: 6px;
+}
+
+.container-sobre {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.container-sobre img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.container-sobre p {
+  display: flex;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.container-formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 20px auto;
+
+}
+.container-formulario h3{
+  width: 95%;
+  text-align: center;
+}
+.container-formulario .formulario{
+  border: 2px solid rgba(0, 0, 0, 0.808);
+  border-radius: 5px;
+  padding: 20px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.container-formulario .formulario input:not(input[type="checkbox"]){
+  border: 1px solid rgba(0, 0, 0, 0.808);
+  border-radius: 5px;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 10px;
+}
+.container-formulario .formulario .check{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1rem;
+
+}
+.container-formulario .formulario .check input{
+  margin-right: 10px;
+}
+.container-formulario .formulario .botao{
+  background-color: rgba(0, 0, 0, 0.808);
+  color: rgb(233, 167, 122);
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+footer{
+  background-color:rgba(0, 0, 0, 0.808); 
+  margin-top: 25px;
+  padding: 16px 10px;
+}
+.rodape{
+  color: rgb(233, 167, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+.rodape p:last-child{
+margin-top: 4px;
+margin-bottom: 8px;
+}
+.sociais{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 5px;
+}
+
+@media screen and(min-width:500px) {
+  .container-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .titulo {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  .container-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card {
+    margin: 30px 0;
+    max-width: 300px;
+  }
+  .container-sobre {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .container-sobre p {
+    margin-left: 80px;
+    width: 90%;
+    align-self: center;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .rodape{
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 18px;
+    padding: 0 100px 0 40px;
+  }
+  .rodape p:last-child{
+    margin-bottom: 0;
+  }
+  .sociais{
+    gap:10px
+  }
+  .sociais img{
+    width: 30px;
+    height: 30px;
+  }
+}
