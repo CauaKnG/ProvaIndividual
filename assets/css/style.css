@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 header {
   background-color: rgba(0, 0, 0, 0.808);
   padding: 10px 3rem;
@@ -13,7 +16,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .titulo {
   color: rgb(233, 167, 122);
   font-size: 24px;
