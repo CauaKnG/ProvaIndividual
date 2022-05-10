@@ -21,6 +21,9 @@ header {
   font-size: 24px;
   margin-bottom: 10px;
 }
+.titulo:hover{
+  text-shadow:0 0 1em rgb(233, 167, 122);
+}
 .navigation {
   display: flex;
   gap: 0 30px;
